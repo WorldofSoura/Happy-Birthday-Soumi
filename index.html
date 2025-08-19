@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        
+        <title>💕Happy Birthday my bestesttt friend💕</title>
+        <link rel = "stylesheet" href="style.css" />
+        <link
+            href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;600;700&family=Poppins:wght@300;400;500;600;700&display=swap"
+            rel="stylesheet">
+       <link rel="icon" href="Logo.png" type="image/jpg">
+        <script defer src="script.js"></script>
+        <script
+            type="text/javascript"
+            src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+    </head>
+    <body>
+        <div class="container step1">
+            <h2>OTP Verification</h2>
+            <br />
+            <h4>Enter your email address</h4>
+            <br />
+            <p>You will recieve an email with a one-time password</p>
+
+            <div class="form-group">
+                <input type="email" id="emailAddress" placeholder="Email Address" onkeyup="validateEmail(this.value)"/>
+            </div>
+            <button class="nextButton">next &rarr;</button> 
+        </div>
+        <div class="container step2">
+            <h2>OTP Verification</h2>
+            <br />
+            <h4>Enter one-time pasword</h4>
+            <p>A one-time password has been seent to<span id="verifyEmail"></span></p>
+
+            <div class="otp-form">
+                <p>Enter the 4 digit code sent to your Email address</p>
+                <div class="otp-group">
+                    <input type="number" maxlength="1" />
+                    <input type="number" maxlength="1" />
+                    <input type="number" maxlength="1" />
+                    <input type="number" maxlength="1" />
+                </div>
+                <p>
+                    Not your email? / Didn't receive the code?
+                    <a href="javascript:void(0)"onclick="changeMyEmail()">Try Again</a>
+                </p>
+            </div>
+            <button class="verifyButton" onclick="verifyOtp()">Verify &RightArrow;</button> 
+        </div>
+        <div class="container step3">
+
+            
+        </div>
+    </body>
+</html>
